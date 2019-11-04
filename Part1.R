@@ -94,7 +94,7 @@ monthly <- orders %>%
   group_by(Order.Month) %>%
   summarise(monthly_quantity=sum(Quantity))
 ggplot(monthly, aes(as.factor(Order.Month), monthly_quantity, group=1)) +
-  geom_line(color="Blue") +
+  geom_line(color="Purple") +
   xlab("Month") +
   ylab("Monthly Sales") +
   theme_bw()
